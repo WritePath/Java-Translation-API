@@ -37,13 +37,13 @@ public class Client {
 	/**
 	 * Address of API
 	 */
-	private String url = "http://www.writepath.co/api";
+	private String url = "https://www.writepath.co/api";
 	/**
 	 * Your API key
 	 */
 	private String apiKey = "";
 	/**
-	 * Your private API key 
+	 * Your private API key
 	 */
 	private String privateKey = "";
 	private ObjectMapper objectMapper;
@@ -118,7 +118,7 @@ public class Client {
 
 	/**
 	 * Send a job with plain text to the service.
-	 * 
+	 *
 	 * @param service
 	 *            The service you require: 1 = editing, 2 = translation only, 4
 	 *            = premium translation (translation + editing)
@@ -167,7 +167,7 @@ public class Client {
 
 	/**
 	 * Send a job with file attachment to the service
-	 * 
+	 *
 	 * @param service
 	 *            The service you require: 1 = editing, 2 = translation only, 4
 	 *            = premium translation (translation + editing)
@@ -214,7 +214,7 @@ public class Client {
 
 	/**
 	 * Retrieves a specific job.
-	 * 
+	 *
 	 * @param jobId
 	 *            id of the job you want to fetch. It's the orderId you get
 	 *            returned if you post a job.
@@ -241,7 +241,7 @@ public class Client {
 
 	/**
 	 * Post a comment on a job
-	 * 
+	 *
 	 * @param jobId
 	 *            The id of the job (= orderId) you want to comment on.
 	 * @param comment
@@ -265,7 +265,7 @@ public class Client {
 
 	/**
 	 * Fetch the list of supported languages
-	 * 
+	 *
 	 * @param service
 	 *            id of service needed
 	 * @return server reply with langArray set
@@ -287,7 +287,7 @@ public class Client {
 
 	/**
 	 * Fetch the word balance for the user
-	 * 
+	 *
 	 * @return server reply with words balance set
 	 * @throws IOException
 	 *             in case of network or json mapping issues
@@ -305,7 +305,7 @@ public class Client {
 
 	/**
 	 * Fetch the word document for plain text
-	 * 
+	 *
 	 * @param service
 	 *            The service you require: 1 = editing, 2 = translation only, 4
 	 *            = premium translation (translation + editing)
@@ -340,7 +340,7 @@ public class Client {
 
 	/**
 	 * Fetch the word count for .docx, .xlsx or .pptx documents
-	 * 
+	 *
 	 * @param service
 	 *            The service you require: 1 = editing, 2 = translation only, 4
 	 *            = premium translation (translation + editing)
