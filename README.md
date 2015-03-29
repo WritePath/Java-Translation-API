@@ -12,39 +12,39 @@ It takes care of authorization, JSON encoding and decoding and it can do a few m
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">co.writepath</div>
-<h2 title="Class Cdivent" class="title">Class Cdivent</h2>
+<h2 title="Class Client" class="title">Class Client</h2>
 </div>
 <div class="contentContainer">
-<div class="inheritance">
+<ul class="inheritance">
 <div>java.lang.Object</div>
 <div>
-<div class="inheritance">
-<div>co.writepath.Cdivent</div>
+<ul class="inheritance">
+<div>co.writepath.Client</div>
 </div>
 </div>
 </div>
 <div class="description">
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <hr>
 <br>
-<pre>pubdivc class <span class="typeNameLabel">Cdivent</span>
+<pre>public class <span class="typeNameLabel">Client</span>
 extends java.lang.Object</pre>
-<div class="block">Java cdivent for WritePath that maps all API functions. For detailed
+<div class="block">Java client for WritePath that maps all API functions. For detailed
  explanations of the API, please visit https://www.writepath.co/en/developers</div>
 </div>
 </div>
 </div>
 <div class="summary">
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <!-- =========== FIELD SUMMARY =========== -->
-<div class="blockdivst">
-<div class="blockdivst"><a name="field.summary">
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, divsting fields, and an explanation">
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
 <caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -52,23 +52,23 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#apiKey">apiKey</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#apiKey">apiKey</a></span></code>
 <div class="block">Your API key</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private com.fasterxml.jackson.databind.ObjectMapper</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#objectMapper">objectMapper</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#objectMapper">objectMapper</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#privateKey">privateKey</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#privateKey">privateKey</a></span></code>
 <div class="block">Your private API key</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#url">url</a></span></code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#url">url</a></span></code>
 <div class="block">Address of API</div>
 </td>
 </tr>
@@ -76,32 +76,32 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<div class="blockdivst">
-<div class="blockdivst"><a name="constructor.summary">
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
 <!--   -->
 </a>
 <h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, divsting constructors, and an explanation">
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#Cdivent-java.lang.String-java.lang.String-">Cdivent</a></span>(java.lang.String&nbsp;apiKey,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#Client-java.lang.String-java.lang.String-">Client</a></span>(java.lang.String&nbsp;apiKey,
       java.lang.String&nbsp;privateKey)</code>
-<div class="block">Instantiate new Cdivent with your pubdivc and private API key set</div>
+<div class="block">Instantiate new Client with your public and private API key set</div>
 </td>
 </tr>
 </table>
 </div>
 </div>
 <!-- ========== METHOD SUMMARY =========== -->
-<div class="blockdivst">
-<div class="blockdivst"><a name="method.summary">
+<ul class="blockList">
+<li class="blockList"><a name="method.summary">
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, divsting methods, and an explanation">
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
 <caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -109,30 +109,30 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>private java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#encodeFileToBase64Binary-java.lang.String-">encodeFileToBase64Binary</a></span>(java.lang.String&nbsp;fileName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#encodeFileToBase64Binary-java.lang.String-">encodeFileToBase64Binary</a></span>(java.lang.String&nbsp;fileName)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#getLanguages-int-">getLanguages</a></span>(int&nbsp;service)</code>
-<div class="block">Fetch the divst of supported languages</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#getLanguages-int-">getLanguages</a></span>(int&nbsp;service)</code>
+<div class="block">Fetch the list of supported languages</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#getStatus-int-int-">getStatus</a></span>(int&nbsp;jobId,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#getStatus-int-int-">getStatus</a></span>(int&nbsp;jobId,
          int&nbsp;format)</code>
 <div class="block">Retrieves a specific job.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#getWordBalance--">getWordBalance</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#getWordBalance--">getWordBalance</a></span>()</code>
 <div class="block">Fetch the word balance for the user</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#getWordCountDocument-int-int-java.lang.String-">getWordCountDocument</a></span>(int&nbsp;service,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#getWordCountDocument-int-int-java.lang.String-">getWordCountDocument</a></span>(int&nbsp;service,
                     int&nbsp;langId,
                     java.lang.String&nbsp;fileName)</code>
 <div class="block">Fetch the word count for .docx, .xlsx or .pptx documents</div>
@@ -140,7 +140,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#getWordCountPlainText-int-int-java.lang.String-">getWordCountPlainText</a></span>(int&nbsp;service,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#getWordCountPlainText-int-int-java.lang.String-">getWordCountPlainText</a></span>(int&nbsp;service,
                      int&nbsp;langId,
                      java.lang.String&nbsp;text)</code>
 <div class="block">Fetch the word document for plain text</div>
@@ -148,24 +148,24 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>private static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#hmacSha1-java.lang.String-java.lang.String-">hmacSha1</a></span>(java.lang.String&nbsp;value,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#hmacSha1-java.lang.String-java.lang.String-">hmacSha1</a></span>(java.lang.String&nbsp;value,
         java.lang.String&nbsp;key)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#postComment-int-java.lang.String-">postComment</a></span>(int&nbsp;jobId,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#postComment-int-java.lang.String-">postComment</a></span>(int&nbsp;jobId,
            java.lang.String&nbsp;comment)</code>
 <div class="block">Post a comment on a job</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>private org.apache.http.cdivent.methods.HttpPost</code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#preparePost-java.lang.String-co.writepath.Data-">preparePost</a></span>(java.lang.String&nbsp;url,
+<td class="colFirst"><code>private org.apache.http.client.methods.HttpPost</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#preparePost-java.lang.String-co.writepath.Data-">preparePost</a></span>(java.lang.String&nbsp;url,
            <a href="../../co/writepath/Data.html" title="class in co.writepath">Data</a>&nbsp;data)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#sendDocument-int-int-int-java.lang.String-java.lang.String-java.lang.String-">sendDocument</a></span>(int&nbsp;service,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#sendDocument-int-int-int-java.lang.String-java.lang.String-java.lang.String-">sendDocument</a></span>(int&nbsp;service,
             int&nbsp;langId,
             int&nbsp;category,
             java.lang.String&nbsp;fileName,
@@ -176,7 +176,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a></code></td>
-<td class="colLast"><code><span class="memberNamedivnk"><a href="../../co/writepath/Cdivent.html#sendPlainText-int-int-int-java.lang.String-java.lang.String-java.lang.String-">sendPlainText</a></span>(int&nbsp;service,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#sendPlainText-int-int-int-java.lang.String-java.lang.String-java.lang.String-">sendPlainText</a></span>(int&nbsp;service,
              int&nbsp;langId,
              int&nbsp;category,
              java.lang.String&nbsp;text,
@@ -186,12 +186,12 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 </table>
-<div class="blockdivst">
-<div class="blockdivst"><a name="methods.inherited.from.class.java.lang.Object">
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finadivze, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></div>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></div>
 </div>
 </div>
 </div>
@@ -199,19 +199,19 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <div class="details">
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <!-- ============ FIELD DETAIL =========== -->
-<div class="blockdivst">
-<div class="blockdivst"><a name="field.detail">
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
 <!--   -->
 </a>
 <h3>Field Detail</h3>
 <a name="url">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>url</h4>
 <pre>private&nbsp;java.lang.String url</pre>
 <div class="block">Address of API</div>
@@ -220,8 +220,8 @@ extends java.lang.Object</pre>
 <a name="apiKey">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>apiKey</h4>
 <pre>private&nbsp;java.lang.String apiKey</pre>
 <div class="block">Your API key</div>
@@ -230,8 +230,8 @@ extends java.lang.Object</pre>
 <a name="privateKey">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>privateKey</h4>
 <pre>private&nbsp;java.lang.String privateKey</pre>
 <div class="block">Your private API key</div>
@@ -240,8 +240,8 @@ extends java.lang.Object</pre>
 <a name="objectMapper">
 <!--   -->
 </a>
-<div class="blockdivstLast">
-<div class="blockdivst">
+<ul class="blockListLast">
+<li class="blockList">
 <h4>objectMapper</h4>
 <pre>private&nbsp;com.fasterxml.jackson.databind.ObjectMapper objectMapper</pre>
 </div>
@@ -249,23 +249,23 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<div class="blockdivst">
-<div class="blockdivst"><a name="constructor.detail">
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Cdivent-java.lang.String-java.lang.String-">
+<a name="Client-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivstLast">
-<div class="blockdivst">
-<h4>Cdivent</h4>
-<pre>pubdivc&nbsp;Cdivent(java.lang.String&nbsp;apiKey,
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Client</h4>
+<pre>public&nbsp;Client(java.lang.String&nbsp;apiKey,
               java.lang.String&nbsp;privateKey)</pre>
-<div class="block">Instantiate new Cdivent with your pubdivc and private API key set</div>
+<div class="block">Instantiate new Client with your public and private API key set</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>apiKey</code> - Pubdivc API key</dd>
+<dd><code>apiKey</code> - Public API key</dd>
 <dd><code>privateKey</code> - Private API key</dd>
 </dl>
 </div>
@@ -273,18 +273,18 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ============ METHOD DETAIL ========== -->
-<div class="blockdivst">
-<div class="blockdivst"><a name="method.detail">
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
 <a name="preparePost-java.lang.String-co.writepath.Data-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>preparePost</h4>
-<pre>private&nbsp;org.apache.http.cdivent.methods.HttpPost&nbsp;preparePost(java.lang.String&nbsp;url,
+<pre>private&nbsp;org.apache.http.client.methods.HttpPost&nbsp;preparePost(java.lang.String&nbsp;url,
                                                             <a href="../../co/writepath/Data.html" title="class in co.writepath">Data</a>&nbsp;data)
                                                      throws java.io.UnsupportedEncodingException,
                                                             com.fasterxml.jackson.core.JsonProcessingException</pre>
@@ -298,8 +298,8 @@ extends java.lang.Object</pre>
 <a name="encodeFileToBase64Binary-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>encodeFileToBase64Binary</h4>
 <pre>private&nbsp;java.lang.String&nbsp;encodeFileToBase64Binary(java.lang.String&nbsp;fileName)</pre>
 </div>
@@ -307,8 +307,8 @@ extends java.lang.Object</pre>
 <a name="hmacSha1-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>hmacSha1</h4>
 <pre>private static&nbsp;java.lang.String&nbsp;hmacSha1(java.lang.String&nbsp;value,
                                          java.lang.String&nbsp;key)</pre>
@@ -317,10 +317,10 @@ extends java.lang.Object</pre>
 <a name="sendPlainText-int-int-int-java.lang.String-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>sendPlainText</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;sendPlainText(int&nbsp;service,
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;sendPlainText(int&nbsp;service,
                            int&nbsp;langId,
                            int&nbsp;category,
                            java.lang.String&nbsp;text,
@@ -334,7 +334,7 @@ extends java.lang.Object</pre>
             = premium translation (translation + editing)</dd>
 <dd><code>langId</code> - The id of the translation / editing language.</dd>
 <dd><code>category</code> - The category / topic your text is about.</dd>
-<dd><code>text</code> - the text you wodivd divke to have translated or edited. Can
+<dd><code>text</code> - the text you would like to have translated or edited. Can
             include HTML tags, these are not counted as words.</dd>
 <dd><code>instructions</code> - instructions for the translator / editor.</dd>
 <dd><code>notifyUrl</code> - When job is finished, a REST post is sent to that URL</dd>
@@ -348,10 +348,10 @@ extends java.lang.Object</pre>
 <a name="sendDocument-int-int-int-java.lang.String-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>sendDocument</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;sendDocument(int&nbsp;service,
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;sendDocument(int&nbsp;service,
                           int&nbsp;langId,
                           int&nbsp;category,
                           java.lang.String&nbsp;fileName,
@@ -379,10 +379,10 @@ extends java.lang.Object</pre>
 <a name="getStatus-int-int-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>getStatus</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getStatus(int&nbsp;jobId,
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getStatus(int&nbsp;jobId,
                        int&nbsp;format)
                 throws java.io.IOException</pre>
 <div class="block">Retrieves a specific job.</div>
@@ -403,10 +403,10 @@ extends java.lang.Object</pre>
 <a name="postComment-int-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>postComment</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;postComment(int&nbsp;jobId,
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;postComment(int&nbsp;jobId,
                          java.lang.String&nbsp;comment)
                   throws java.io.IOException</pre>
 <div class="block">Post a comment on a job</div>
@@ -424,12 +424,12 @@ extends java.lang.Object</pre>
 <a name="getLanguages-int-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>getLanguages</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getLanguages(int&nbsp;service)
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getLanguages(int&nbsp;service)
                    throws java.io.IOException</pre>
-<div class="block">Fetch the divst of supported languages</div>
+<div class="block">Fetch the list of supported languages</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>service</code> - id of service needed</dd>
@@ -443,10 +443,10 @@ extends java.lang.Object</pre>
 <a name="getWordBalance--">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>getWordBalance</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordBalance()
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordBalance()
                      throws java.io.IOException</pre>
 <div class="block">Fetch the word balance for the user</div>
 <dl>
@@ -460,10 +460,10 @@ extends java.lang.Object</pre>
 <a name="getWordCountPlainText-int-int-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivst">
-<div class="blockdivst">
+<ul class="blockList">
+<li class="blockList">
 <h4>getWordCountPlainText</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordCountPlainText(int&nbsp;service,
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordCountPlainText(int&nbsp;service,
                                    int&nbsp;langId,
                                    java.lang.String&nbsp;text)
                             throws java.io.IOException</pre>
@@ -473,7 +473,7 @@ extends java.lang.Object</pre>
 <dd><code>service</code> - The service you require: 1 = editing, 2 = translation only, 4
             = premium translation (translation + editing)</dd>
 <dd><code>langId</code> - The id of the translation / editing language.</dd>
-<dd><code>text</code> - the text you wodivd divke to have translated or edited. Can
+<dd><code>text</code> - the text you would like to have translated or edited. Can
             include HTML tags, these are not counted as words.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>server reply with word count set</dd>
@@ -485,10 +485,10 @@ extends java.lang.Object</pre>
 <a name="getWordCountDocument-int-int-java.lang.String-">
 <!--   -->
 </a>
-<div class="blockdivstLast">
-<div class="blockdivst">
+<ul class="blockListLast">
+<li class="blockList">
 <h4>getWordCountDocument</h4>
-<pre>pubdivc&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordCountDocument(int&nbsp;service,
+<pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordCountDocument(int&nbsp;service,
                                   int&nbsp;langId,
                                   java.lang.String&nbsp;fileName)
                            throws java.io.IOException</pre>
