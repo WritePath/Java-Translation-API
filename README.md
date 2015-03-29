@@ -15,17 +15,17 @@ It takes care of authorization, JSON encoding and decoding and it can do a few m
 <h2 title="Class Client" class="title">Class Client</h2>
 </div>
 <div class="contentContainer">
-<ul class="inheritance">
+<div class="inheritance">
 <div>java.lang.Object</div>
 <div>
-<ul class="inheritance">
+<div class="inheritance">
 <div>co.writepath.Client</div>
 </div>
 </div>
 </div>
 <div class="description">
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Client</span>
@@ -36,11 +36,11 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <div class="summary">
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
+<div class="blockList">
+<div class="blockList"><a name="field.summary">
 <!--   -->
 </a>
 <h3>Field Summary</h3>
@@ -76,8 +76,8 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
+<div class="blockList">
+<div class="blockList"><a name="constructor.summary">
 <!--   -->
 </a>
 <h3>Constructor Summary</h3>
@@ -96,8 +96,8 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ========== METHOD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.summary">
+<div class="blockList">
+<div class="blockList"><a name="method.summary">
 <!--   -->
 </a>
 <h3>Method Summary</h3>
@@ -186,8 +186,8 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<div class="blockList">
+<div class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
@@ -199,19 +199,19 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <div class="details">
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
+<div class="blockList">
+<div class="blockList"><a name="field.detail">
 <!--   -->
 </a>
 <h3>Field Detail</h3>
 <a name="url">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>url</h4>
 <pre>private&nbsp;java.lang.String url</pre>
 <div class="block">Address of API</div>
@@ -220,8 +220,8 @@ extends java.lang.Object</pre>
 <a name="apiKey">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>apiKey</h4>
 <pre>private&nbsp;java.lang.String apiKey</pre>
 <div class="block">Your API key</div>
@@ -230,8 +230,8 @@ extends java.lang.Object</pre>
 <a name="privateKey">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>privateKey</h4>
 <pre>private&nbsp;java.lang.String privateKey</pre>
 <div class="block">Your private API key</div>
@@ -240,8 +240,8 @@ extends java.lang.Object</pre>
 <a name="objectMapper">
 <!--   -->
 </a>
-<ul class="blockListLast">
-<li class="blockList">
+<div class="blockListLast">
+<div class="blockList">
 <h4>objectMapper</h4>
 <pre>private&nbsp;com.fasterxml.jackson.databind.ObjectMapper objectMapper</pre>
 </div>
@@ -249,16 +249,16 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
+<div class="blockList">
+<div class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
 <a name="Client-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
-<li class="blockList">
+<div class="blockListLast">
+<div class="blockList">
 <h4>Client</h4>
 <pre>public&nbsp;Client(java.lang.String&nbsp;apiKey,
               java.lang.String&nbsp;privateKey)</pre>
@@ -273,16 +273,16 @@ extends java.lang.Object</pre>
 </div>
 </div>
 <!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
+<div class="blockList">
+<div class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
 <a name="preparePost-java.lang.String-co.writepath.Data-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>preparePost</h4>
 <pre>private&nbsp;org.apache.http.client.methods.HttpPost&nbsp;preparePost(java.lang.String&nbsp;url,
                                                             <a href="../../co/writepath/Data.html" title="class in co.writepath">Data</a>&nbsp;data)
@@ -298,8 +298,8 @@ extends java.lang.Object</pre>
 <a name="encodeFileToBase64Binary-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>encodeFileToBase64Binary</h4>
 <pre>private&nbsp;java.lang.String&nbsp;encodeFileToBase64Binary(java.lang.String&nbsp;fileName)</pre>
 </div>
@@ -307,8 +307,8 @@ extends java.lang.Object</pre>
 <a name="hmacSha1-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>hmacSha1</h4>
 <pre>private static&nbsp;java.lang.String&nbsp;hmacSha1(java.lang.String&nbsp;value,
                                          java.lang.String&nbsp;key)</pre>
@@ -317,8 +317,8 @@ extends java.lang.Object</pre>
 <a name="sendPlainText-int-int-int-java.lang.String-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>sendPlainText</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;sendPlainText(int&nbsp;service,
                            int&nbsp;langId,
@@ -348,8 +348,8 @@ extends java.lang.Object</pre>
 <a name="sendDocument-int-int-int-java.lang.String-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>sendDocument</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;sendDocument(int&nbsp;service,
                           int&nbsp;langId,
@@ -379,8 +379,8 @@ extends java.lang.Object</pre>
 <a name="getStatus-int-int-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>getStatus</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getStatus(int&nbsp;jobId,
                        int&nbsp;format)
@@ -403,8 +403,8 @@ extends java.lang.Object</pre>
 <a name="postComment-int-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>postComment</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;postComment(int&nbsp;jobId,
                          java.lang.String&nbsp;comment)
@@ -424,8 +424,8 @@ extends java.lang.Object</pre>
 <a name="getLanguages-int-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>getLanguages</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getLanguages(int&nbsp;service)
                    throws java.io.IOException</pre>
@@ -443,8 +443,8 @@ extends java.lang.Object</pre>
 <a name="getWordBalance--">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>getWordBalance</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordBalance()
                      throws java.io.IOException</pre>
@@ -460,8 +460,8 @@ extends java.lang.Object</pre>
 <a name="getWordCountPlainText-int-int-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
+<div class="blockList">
+<div class="blockList">
 <h4>getWordCountPlainText</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordCountPlainText(int&nbsp;service,
                                    int&nbsp;langId,
@@ -485,8 +485,8 @@ extends java.lang.Object</pre>
 <a name="getWordCountDocument-int-int-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
-<li class="blockList">
+<div class="blockListLast">
+<div class="blockList">
 <h4>getWordCountDocument</h4>
 <pre>public&nbsp;<a href="../../co/writepath/Reply.html" title="class in co.writepath">Reply</a>&nbsp;getWordCountDocument(int&nbsp;service,
                                   int&nbsp;langId,
