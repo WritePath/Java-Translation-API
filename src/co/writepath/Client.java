@@ -292,6 +292,33 @@ public class Client {
 
 		return reply;
 	}
+	
+	/**
+	 * Retrieves a set of batched jobs.
+	 *
+	 * @param batchId
+	 *            id of the batched jobs you want to fetch. It's the orderId 
+	 *            you get returned if you post a job.
+	 * @param format
+	 *            The format of the returned content. 1 = as a file, 2 = as
+	 *            plain text
+	 * @return server reply with wordsUsed, status, dueDate, wordsBalance,
+	 *         commentFinished and document set
+	 * @throws IOException
+	 *             in case of network or json mapping issues
+	 */
+	public BatchReply getBatchedStatus(int batchId, int format) throws IOException {
+		Data data = new Data();
+		data.setFormat(format);
+		HttpClient httpClient = HttpClients.createDefault();
+		HttpPost httpPost = preparePost("/bjobs/" + batchId, data);
+		HttpResponse response = httpClient.execute(httpPost);
+		HttpEntity responseEntity = response.getEntity();
+		String returnString = EntityUtils.toString(responseEntity);
+		BatchReply reply = objectMapper.readValue(returnString, BatchReply.class);
+
+		return reply;
+	}
 
 	/**
 	 * Post a comment on a job
