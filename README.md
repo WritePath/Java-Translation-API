@@ -185,6 +185,24 @@ extends java.lang.Object</pre>
 <div class="block">Send a job with plain text to the service.</div>
 </td>
 </tr>
+<tr id="i10" class="rowColor">
+<td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">BatchReply</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#sendPlainText-int-int-int-java.lang.String-java.lang.String-java.lang.String-">sendBatchedPlainText</a></span>(int&nbsp;service,
+             int&nbsp;langId,
+             int&nbsp;category,
+             List &lt;java.lang.String&gt;&nbsp;text,
+             java.lang.String&nbsp;instructions,
+             java.lang.String&nbsp;notifyUrl)</code>
+<div class="block">Send batched jobs with plain text to the service.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../co/writepath/Reply.html" title="class in co.writepath">BatchReply</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../co/writepath/Client.html#getStatus-int-int-">getBatchedStatus</a></span>(int&nbsp;jobId,
+         int&nbsp;format)</code>
+<div class="block">Retrieves specific batched jobs.</div>
+</td>
+</tr>
 </table>
 <div class="blockList">
 <div class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
