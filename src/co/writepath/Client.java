@@ -27,6 +27,8 @@ import org.apache.http.util.EntityUtils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonGenerator.Feature;
+
 
 /**
  * Java client for WritePath that maps all API functions. For detailed
@@ -37,7 +39,8 @@ public class Client {
 	/**
 	 * Address of API
 	 */
-	private String url = "https://www.writepath.co/api";
+	//private String url = "https://www.writepath.co/api";
+	private String url = "http://writepathco.localhost/api";
 	/**
 	 * Your API key
 	 */
@@ -57,15 +60,15 @@ public class Client {
 		this.apiKey = apiKey;
 		this.privateKey = privateKey;
 		this.objectMapper = new ObjectMapper();
+		this.objectMapper.configure(Feature.ESCAPE_NON_ASCII, true);
 	}
 
 	private HttpPost preparePost(String url, Data data)
 			throws UnsupportedEncodingException, JsonProcessingException {
 		String dataString = "";
-		if (data != null) {
+		if (data != null) {			
 			dataString = objectMapper.writeValueAsString(data);
 		}
-
 		HttpPost httpPost = new HttpPost(this.url + url);
 		List<NameValuePair> nvps = new ArrayList<NameValuePair>();
 		nvps.add(new BasicNameValuePair("api_key", apiKey));
@@ -161,6 +164,57 @@ public class Client {
 		HttpEntity responseEntity = response.getEntity();
 		String returnString = EntityUtils.toString(responseEntity);
 		Reply reply = objectMapper.readValue(returnString, Reply.class);
+
+		return reply;
+	}
+	
+	/**
+	 * Send batched jobs with plain text to the service.
+	 *
+	 * @param service
+	 *            The service you require: 1 = editing, 2 = translation only, 4
+	 *            = premium translation (translation + editing)
+	 * @param langId
+	 *            The id of the translation / editing language.
+	 * @param category
+	 *            The category / topic your text is about.
+	 * @param text
+	 *            the list of text you would like to have translated or edited. Can
+	 *            include HTML tags, these are not counted as words.
+	 * @param instructions
+	 *            instructions for the translator / editor.
+	 * @param notifyUrl
+	 *            When job is finished, a REST post is sent to that URL
+	 * @return server reply with wordsUsed and orderId set
+	 * @throws IOException
+	 *             in case of network or json mapping issues
+	 */
+	public BatchReply sendBatchedPlainText(int service, int langId, int category,
+			List<String> text, String instructions, String notifyUrl)
+			throws IOException {
+		if (text.size() <= 0) {
+			return null;
+		}
+
+		Map<String, String> job = new HashMap<String, String>();
+		job.put("service", Integer.toString(service));
+		job.put("langID", Integer.toString(langId));
+		job.put("category", Integer.toString(category));
+		this.objectMapper.configure(Feature.ESCAPE_NON_ASCII, false);
+		job.put("body", objectMapper.writeValueAsString(text));
+		this.objectMapper.configure(Feature.ESCAPE_NON_ASCII, true);
+		job.put("instructions", instructions);
+		job.put("notify_url", notifyUrl);
+
+		Data data = new Data();
+		data.setJob(job);
+
+		HttpClient httpClient = HttpClients.createDefault();
+		HttpPost httpPost = preparePost("/bjobs", data);
+		HttpResponse response = httpClient.execute(httpPost);
+		HttpEntity responseEntity = response.getEntity();
+		String returnString = EntityUtils.toString(responseEntity);
+		BatchReply reply = objectMapper.readValue(returnString, BatchReply.class);
 
 		return reply;
 	}

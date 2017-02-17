@@ -1,9 +1,11 @@
 package co.writepath;
 
+import java.util.List;
+
 /**
- * Generic server reply container
+ * Batched job server reply container
  */
-public class Reply {
+public class BatchReply {
 	/**
 	 * set to either "ok" or "error". If an error occurs, check
 	 * {@link co.writepath.Response#errorCode} and
@@ -13,8 +15,20 @@ public class Reply {
 	/**
 	 * Container for server return values
 	 */
-	private Response response;
-
+	private List<Response> response;
+	/**
+	 * Container for server return batch ID
+	 */
+	private String batchId;
+	
+	public String getBatchId() {
+		return batchId;
+	}
+	
+	public void setBatchId(String bId) {
+		this.batchId = bId;
+	}
+	
 	public String getOpStatus() {
 		return opStatus;
 	}
@@ -23,11 +37,11 @@ public class Reply {
 		this.opStatus = opStatus;
 	}
 
-	public Response getResponse() {
+	public List<Response> getResponse() {
 		return response;
 	}
 
-	public void setResponse(Response response) {
+	public void setResponse(List<Response> response) {
 		this.response = response;
 	}
 
